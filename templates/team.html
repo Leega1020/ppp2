@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMES</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/team.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/commons.css">
+    
+</head>
+</head>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-logo" style="flex:0.1">
+                <img id="logocursor" src="/static/images/bn_pleague-360x360-1.png">
+            </div>
+            <ul class="nav-item">
+                <li ><a class="text" href="/game">近期賽事</a></li><p style="color: white;">|</p>
+                <li><a class="text" href="/player">球員數據</a></li><p style="color: white;">|</p>
+                <li><a class="text" href="/team">球隊數據</a></li><p style="color: white;">|</p>
+            </ul>
+            <div class="sign" style="margin-left: auto;margin-right: 40px;">
+                <div class="signature"><img id="welcomePic" src=""></div>
+                <div class="signout text" style="text-align: center;"><p id="welcomeNickname"></p></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="thead"> <div class="mt2"><img src="/static/images/bar2.png"><p>22-23 例行賽場均</p></div></header>
+    <main class="mainContainer">
+        <div class="mainHeader">
+            <div class="select">
+                <p class="text4" style="margin-left: 10px;"></p>
+                <select id="teamSelect" class="p2 opt" style="margin-top: 0px;">
+                    <option value="全部隊伍">全部隊伍</option>
+                    <option value="臺北富邦勇士">臺北富邦勇士</option>
+                    <option value="新北國王">新北國王</option>
+                    <option value="新竹街口攻城獅">新竹街口攻城獅</option>
+                    <option value="福爾摩沙台新夢想家">福爾摩沙台新夢想家</option>
+                    <option value="桃園領航猿">桃園領航猿</option>
+                    <option value="高雄17直播鋼鐵人">高雄17直播鋼鐵人</option>   
+                </select>
+            </div>
+        </div>
+
+        
+       
+        <div class="mainContent">
+            
+            <div class="teamTitle">
+                <div class="aaaaa">
+                    <div class="teamImg"><img id="tpic" src="/static/images/king.png"></div>
+                    <div class="imgP">
+                        <div class="teamSelectName"><p id="t"></p></div>
+                       
+                    </div>
+                    <div id="chart"></div>
+               
+                </div>
+            </div>
+            
+            <div class="teamchart">
+                <div class="bbbbb">
+                    <div class="tc2">
+                        <div class="tc22">
+                            <div id="point2"></div>
+                            <p> 兩分命中率</p>
+                        </div>
+                        <div class="tc22">
+                            <div id="point3"></div>
+                            <p> 三分命中率</p>
+                        </div>
+                        <div class="tc22">
+                            <div id="foulShot"></div>
+                            <p> 罰球命中率</p>
+                        </div>
+                    </div>
+                    <div class="pct">
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">PCT</p>
+                        <p class="pctvalue"></p>
+                       </div>
+                </div>
+               
+               
+             
+            </div>
+
+            
+        </div>
+        
+    </main>
+    <button class="tb">詳細數據</button>
+
+    <header class="thead" id="thead" style="display: none;padding-top: 0;height: 30px;width: 600px;margin: 0 auto;border-radius: 5px;background-color:#c7c7c7;margin-top: 20px;"><p style="font-size: 12px;font-weight: 400;color: rgb(51, 51, 51);font-family: Noto Sans TC;">詳細數據</p></header>
+    
+    <section class="curveSection" style="display: none;">
+        <div id="chart-container"></div>
+    </section>
+    
+
+    <footer></footer>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/team.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    
+    
+</body>
+</html>

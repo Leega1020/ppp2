@@ -1,0 +1,154 @@
+.text{
+    color: white;
+    font-family: Noto Sans TC;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+.text2{
+    color: rgb(0, 0, 0);
+    font-family: Noto Sans TC;
+    font-size: 18px;
+    font-style:normal;
+    font-weight: 500;
+}
+.text3{
+    color: rgb(23, 23, 23);
+    font-family: Noto Sans TC;
+    font-size: 18px;
+    font-style:normal;
+    font-weight: 400;
+}
+
+.signout a{
+    color: white;
+    text-decoration: none;
+    font-family: Noto Sans TC;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    margin-right: 20px;
+    text-align: center;
+  
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#f6f6f6;
+}
+ul {
+    list-style: none;
+  }
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: fixed;
+
+    z-index: 3000;
+}
+
+.nav-logo{
+    width: 160px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-logo img{
+    width:70px;
+    height: auto;
+    padding-left: 50px;
+}
+.nav-item{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin-left: -50px;
+    flex:0.5
+}
+.nav-item a{
+    text-decoration: none;
+}
+
+li{
+    width:auto;
+    height: 100%;
+    text-align: center; 
+    padding: 0 15px;
+    line-height:4.5;
+}
+.sign{
+    display: flex;
+    flex:0.2;
+    height: 100%;
+    display: flex;
+    margin-right: 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+.signature{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.signature img{
+    width: 60px;
+    height: auto;
+}
+.signout{
+    width:auto;
+   margin: 0 15px 0 15px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#welcomeNickname{
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logocursor{
+    cursor: pointer;
+}
+footer {
+    bottom: 0;
+    width: 100%;
+    height:300px; /* 或者使用其他你想要的高度 */
+    background-color: black;
+    margin-top: 120px;
+}
+/* ---------------- < team-game > ------------------ */
+
+@media screen and (min-width: 800px) and (max-width: 1200px){ 
+   
+    
+    .nav-item{
+        flex:1;
+        margin-left: -50px;
+    }
+ 
+    .sign{
+        display: flex;
+        flex: 0.5;
+    }
+    .signout {
+        margin: 0 0px 0 0px;
+    }
+}
+@media screen and (max-width:800px){ 
+    .sign{
+        flex: 0.8;
+    }
+    .nav-item{
+        flex:0.1;
+        margin-left: -50px;
+    }
+}
